@@ -10,6 +10,7 @@ use XingeUnify\XingeSdk\Message;
 use XingeUnify\XingeSdk\TimeInterval;
 use XingeUnify\XingeSdk\ClickAction;
 use XingeUnify\XingeSdk\TagTokenPair;
+use XingeUnify\XingeSdk\Style;
 
 class XingeUnify {
     /*
