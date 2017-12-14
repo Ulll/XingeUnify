@@ -6,12 +6,12 @@
 
 
 ```
-
 composer require "papajo/xingeunify"
-
 ```
 
 ```php
 $push = new \XingeUnify\XingeUnify('access_key', 'secret_key', 'ios');
-$push->PushSingleDevice('device_token', 'title', 'content');
+$ret1 = $push->PushSingleDevice('device_token', 'title', 'content');
+//or continue switch app config and push
+$ret2 = $push->setAccess('access_key2', 'secret_key2')->setXingeAppObj('android')->setXingeMessObj()->PushSingleDevice('device_token', 'title', 'content');
 ```
