@@ -5,6 +5,11 @@ namespace XingeUnify;
 use XingeUnify\XingeSdk\XingeApp;
 use XingeUnify\Exception\XingeException;
 use XingeUnify\Log\Log;
+use XingeUnify\XingeSdk\MessageIOS;
+use XingeUnify\XingeSdk\Message;
+use XingeUnify\XingeSdk\TimeInterval;
+use XingeUnify\XingeSdk\ClickAction;
+use XingeUnify\XingeSdk\TagTokenPair;
 
 class XingeUnify {
     /*
@@ -109,7 +114,7 @@ class XingeUnify {
                 break;
         }
         //设置消息离线保存时间为1天
-        $this->_messobj->setExpireTime($expiretime);
+        $this->_messobj->setExpireTime(86400);
         //设置推送时间
         $send_time = date('Y-m-d H:i:s');
         $this->_messobj->setSendTime($send_time);
