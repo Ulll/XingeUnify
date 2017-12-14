@@ -12,6 +12,6 @@ composer require "papajo/xingeunify"
 ```
 
 ```php
-$push = new \XingeUnify\XingeUnify('xxxxx', 'xxxxx', 'ios');
+$push = new \XingeUnify\XingeUnify('access_key', 'secret_key', 'ios');
 $push->PushSingleDevice('device_token', 'title', 'content');
 ```
